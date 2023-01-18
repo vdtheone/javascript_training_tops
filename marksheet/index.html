@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Marksheet</h1>
+    <form>
+      <label for="sub1">sub1</label>
+      <input onblur="check()" type="text" id="sub1" />
+      <span id="s1error"></span>
+      <br /><br />
+      <label for="sub2"></label>
+      <input onblur="check()" type="text" id="sub2" />
+      <span id="s2error"></span>
+      <br /><br />
+      <label for="sub3">sub3 </label>
+      <input onblur="check()" type="text" id="sub3" />
+      <span id="s3error"></span>
+      <br /><br />
+      <label for="sub4">sub4 </label>
+      <input onblur="check()" type="text" id="sub4" />
+      <span id="s4error"></span>
+      <br /><br />
+      <label for="sub5">sub5 </label>
+      <input onblur="check()" type="text" id="sub5" />
+      <span id="s5error"></span>
+      <br /><br />
+      <input type="button" onclick="result()" value="Result" />
+    </form>
+    <br /><br />
+    <span id="percentage"></span><br /><br />
+    <span id="result"></span>
+
+    <script src="script.js" defer></script>
+
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+    <script
+      src="https://replit.com/public/js/replit-badge.js"
+      theme="blue"
+      defer
+    ></script>
+  </body>
+</html>
